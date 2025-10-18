@@ -189,6 +189,37 @@
                     background-color: #000000;
                     border-radius: 3px;
                 }
+                &_bar{
+                    width: 70%;
+                    height: 100vh;
+                    background: #000;
+                    position: absolute;
+                    left: 0%;
+                    top: 0%;
+                    position: fixed;
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 50px;
+                    z-index: 990;
+                    &_text{
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        transition: all 0.3s linear;
+                        &:hover{
+                            color: #FFC700;
+                            transition: all 0.5s linear;
+                        }
+                    }
+                }
             }
         }
         }
@@ -341,6 +372,9 @@
                 }
                 &_burger{
                     display: flex;
+                    &:hover .header_title_burger_bar{
+                        display: flex;
+                    }
                 }
                 &_stick{
                     display: none;
