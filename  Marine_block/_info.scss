@@ -1,0 +1,40 @@
+.info{
+    width: 976px;
+    height: 242px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ffbb00;
+    border-radius: 20px;
+    &_text{
+    width: 916px;
+    height: 171px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+    color: #000000;
+    }
+    &_text span{
+        color: #DBA833;
+    }
+}
+
+@media (max-width: 500px){
+    .info{
+        width: 90%;
+        &_text{
+        width: 90%;
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 27px;
+        line-height: 32px;
+        text-align: center;
+        color: #000000;
+        }
+    }
+}
